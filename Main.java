@@ -10,12 +10,16 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Path path = Paths.get("C:\\mybynaryasbase64mime.txt"); //binary file in base64 MIME format
-        String mybinaryf = new String(Files.readAllBytes(path)); //read the base64MIME file
+        //read the binary file in base64 MIME format
+        Path path = Paths.get("C:\\mybynaryasbase64mime.txt"); 
+        String mybinaryf = new String(Files.readAllBytes(path)); 
      
-        byte[] asBytes = Base64.getDecoder().decode(mybinaryf); //convert from base64MIME to binary
-        FileOutputStream fos = new FileOutputStream("C:mybinary.bin"); //save the binary on FS
-        fos.write(asBytes);
+        //convert from base64MIME to binary
+        byte[] asBytes = Base64.getDecoder().decode(mybinaryf); 
+        
+        //save the binary on FS
+        FileOutputStream fos = new FileOutputStream("C:mybinary.bin"); 
+        fos.write(asBytes); 
         fos.close();
     }
 }
