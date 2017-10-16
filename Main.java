@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         //read the binary file in base64 MIME format
-        Path path = Paths.get("C:\\mybynaryasbase64mime.txt"); 
+        Path path = Paths.get("C:\\mybinaryasbase64mime.txt"); 
         String mybinaryf = new String(Files.readAllBytes(path)); 
      
         //convert from base64MIME to binary
