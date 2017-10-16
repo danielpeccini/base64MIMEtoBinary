@@ -14,7 +14,7 @@ public class Main {
         String mybinaryf = new String(Files.readAllBytes(path)); //read the base64MIME file
      
         byte[] asBytes = Base64.getDecoder().decode(mybinaryf); //convert from base64MIME to binary
-        FileOutputStream fos = new FileOutputStream("C:mybynary.bin"); //save the binary on FS
+        FileOutputStream fos = new FileOutputStream("C:mybinary.bin"); //save the binary on FS
         fos.write(asBytes);
         fos.close();
     }
