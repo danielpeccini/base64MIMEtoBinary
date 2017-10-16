@@ -6,4 +6,4 @@ I'm using a Linux console:
 
 $cat CMD.EXE |base64 > cmd_exe.txt
 
-Insert the output name inside the Java program and run it to reconvert it to binary format.
+Insert the output name inside the Java program and run it to reconvert into binary format.
